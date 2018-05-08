@@ -21,10 +21,10 @@ Essa página apresenta um resumo dos projetos realizado na disciplina **"Anális
 ## Projeto 1
 
 * Título: Titanic - Análise Exploratória de Dados
-* Data:
+* Data: 08/05/2018
 
 ### Descrição
-Esse projeto tem como objetivo realizar uma análise exploratória no dados do .....
+Esse projeto tem como objetivo realizar uma análise exploratória nos dados baseados no acidente do Titanic.
 
 ### Relatório do Projeto
 
@@ -35,6 +35,18 @@ Link no [meu Github](<https://github.com/andrebogliari/Titanic_Analise>) *Pages*
 ## Projeto 2
 
 * Título: Regressão linear
+* Data:
+
+### Descrição
+Esse projeto tem como objetivo realizar a previsão de ... usando um modelo de regressão linear .....
+
+### Relatório do Projeto
+
+Link no [meu Github](<https://github.com/Efsilvaa>) *Pages*: [Projeto 2](projetos/projeto1.html)
+
+## Projeto 3
+
+* Título: Regressão linear - Diminuindo Erros
 * Data:
 
 ### Descrição
