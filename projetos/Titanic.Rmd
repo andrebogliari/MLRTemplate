@@ -1,6 +1,8 @@
 ---
 title: "Titanic"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +24,7 @@ library(ggplot2)
 
 dados <- read.table('titanic.dat.txt')
 
-## VARIÁVEIS BASE DE DADOS ####
+## INFORMAÇÕES DAS VARIÁVEIS DA BASE DE DADOS ####
 
 #Class (V1)    ->   (0=crew, 1=first, 2 = second, 3 = third)
 #Age (V2)      ->   (1 = adult, 0 = child)
@@ -33,14 +35,14 @@ dados <- read.table('titanic.dat.txt')
 
 #help(head)
 
-## Alterando nome das variáveis ####
+## ALTERANDO NOME DE VARIÁVEIS ####
 
 colnames(dados)[colnames(dados)=="V1"] <- "classe"
 colnames(dados)[colnames(dados)=="V2"] <- "idade"
 colnames(dados)[colnames(dados)=="V3"] <- "sexo"
 colnames(dados)[colnames(dados)=="V4"] <- "sobrev"
 
-## Filtrando dados (filter, select, arrange, mutate, group_by and summarise) ####
+## ANALISANDO DADOS (filter, select, arrange, mutate, group_by and summarise) ####
 
 #Analisar quantas homens e mulheres que sobreviveram/morreram
 dados  %>% 
@@ -91,8 +93,8 @@ dados  %>%
 ```{r}
 #Gráfico
 
-#df <- dados  %>% group_by(classe) %>% summarise_each(funs(mean), sobrev)
+df <- dados  %>% group_by(classe) %>% summarise_each(funs(mean), sobrev)
 
-#g <- ggplot(data=df) + geom_mosaic
+g <- ggplot(df) + geom_mosaic
 ```
 
